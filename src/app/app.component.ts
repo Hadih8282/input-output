@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'input-output';
+  ratings: number[] = [3.4, 4, 3, 2.5, 4.5];
+
+  public onStarClicked(rating: number) {
+    console.log(`The rating ${rating} is clicked!`);
+  }
+
+
 }
